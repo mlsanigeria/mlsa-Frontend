@@ -45,7 +45,7 @@ export default function NavBar() {
 					</Flex>
 					<Flex gap="18px" display={{ base: 'none', md: 'flex' }}>
 						{NavLinks.map((item, index) => (
-							<Link href={item.link} key={index} _hover={{ textDecoration: 'none' }}>
+							<Link key={index} _hover={{ textDecoration: 'none' }}>
 								<Text color="secondary.gray100">{item.title}</Text>
 							</Link>
 						))}
