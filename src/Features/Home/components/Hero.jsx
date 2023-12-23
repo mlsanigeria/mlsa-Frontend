@@ -33,7 +33,7 @@ export default function Hero() {
 						border="1px solid #CEE6FF"
 						borderRadius="8px"
 						fontWeight="500"
-						minWidth="190px"
+						width="100%"
 						_hover={{ bg: 'none' }}
 					>
 						Become an Ambassador

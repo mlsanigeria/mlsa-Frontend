@@ -20,7 +20,7 @@ import ExternalLink from '../../../common/components/Link'
 export default function Impact() {
 	return (
 		<Box>
-			<Grid my="74px" templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap="8">
+			<Grid mt="120px" templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap="8">
 				<GridItem>
 					<Heading color="brand.black" mb="20px">
 						Our Impact
@@ -62,6 +62,7 @@ export default function Impact() {
 				bg="secondary.gray300"
 				pt="50px"
 				pb="30px"
+                mt="120px"
 				mb="74px"
 				borderRadius="16px"
 				px={{ base: '10px', md: '10%' }}
@@ -77,7 +78,7 @@ export default function Impact() {
 						borderRadius="8px"
 						fontWeight="500"
 						_hover={{ bg: 'brand.primary' }}
-						>
+					>
 						Join a Community
 					</Button>
 
@@ -88,7 +89,7 @@ export default function Impact() {
 							border="1px solid #CEE6FF"
 							borderRadius="8px"
 							fontWeight="500"
-							minWidth="190px"
+							width="100%"
 							_hover={{ bg: 'none' }}
 						>
 							Become an Ambassador
