@@ -32,7 +32,7 @@ export default function Footer() {
 					</HStack>
 					<HStack gap={8} flexDir={{ base: 'column', sm: 'row' }} justifyContent="center">
 						{FooterLinks.map((item, index) => (
-							<Link key={index} href={item.link} _hover={{ textDecoration: 'none' }}>
+							<Link key={index} _hover={{ textDecoration: 'none' }}>
 								<Text color="secondary.gray100">{item.title}</Text>
 							</Link>
 						))}
