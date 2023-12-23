@@ -15,11 +15,12 @@ import event from '../../../assets/event.svg'
 import university from '../../../assets/university.svg'
 import handshake from '../../../assets/handshake.svg'
 import Carousel from './Carousel'
+import ExternalLink from '../../../common/components/Link'
 
 export default function Impact() {
 	return (
 		<Box>
-			<Grid mb="74px" templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap="8">
+			<Grid my="74px" templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap="8">
 				<GridItem>
 					<Heading color="brand.black" mb="20px">
 						Our Impact
@@ -80,17 +81,19 @@ export default function Impact() {
 						Join a Community
 					</Button>
 
-					<Button
-						bg="white"
-						color="brand.primary"
-						border="1px solid #CEE6FF"
-						borderRadius="8px"
-						fontWeight="500"
-						minWidth="190px"
-						_hover={{ bg: 'none' }}
-					>
-						Become an Ambassador
-					</Button>
+					<ExternalLink href="https://mvp.microsoft.com/studentambassadors" target="_blank">
+						<Button
+							bg="white"
+							color="brand.primary"
+							border="1px solid #CEE6FF"
+							borderRadius="8px"
+							fontWeight="500"
+							minWidth="190px"
+							_hover={{ bg: 'none' }}
+						>
+							Become an Ambassador
+						</Button>
+					</ExternalLink>
 				</Flex>
 			</Box>
 		</Box>
