@@ -1,4 +1,5 @@
 import { AspectRatio, Box, Button, Flex, Heading } from '@chakra-ui/react'
+import ExternalLink from '../../../common/components/Link'
 
 export default function Hero() {
 	return (
@@ -16,28 +17,30 @@ export default function Hero() {
 			</Heading>
 			<Flex justify="center" gap="20px" my="43px" flexDir={{ base: 'column', sm: 'row' }}>
 				<Button
-					bg="white"
-					color="brand.primary"
-					border="1px solid #CEE6FF"
-					borderRadius="8px"
-					fontWeight="500"
-					minWidth="190px"
-					_hover={{ bg: 'none' }}
-				>
-					Join a Community
-				</Button>
-
-				<Button
 					color={'white'}
 					bg={'brand.primary'}
 					borderRadius="8px"
 					fontWeight="500"
 					_hover={{ bg: 'brand.primary' }}
 				>
-					Become an Ambassador
+					Join a Community
 				</Button>
+
+				<ExternalLink href="https://mvp.microsoft.com/studentambassadors" target="_blank">
+					<Button
+						bg="white"
+						color="brand.primary"
+						border="1px solid #CEE6FF"
+						borderRadius="8px"
+						fontWeight="500"
+						minWidth="190px"
+						_hover={{ bg: 'none' }}
+					>
+						Become an Ambassador
+					</Button>
+				</ExternalLink>
 			</Flex>
-			<AspectRatio ratio={1} height={{ base: '70vh', '2xl': '100%' }}>
+			<AspectRatio ratio={1} height={{ base: '70vh', '2xl': '70%' }}>
 				<iframe
 					title="MLSA ambassador helper video"
 					src="https://www.youtube.com/embed/jPP5fEkF0To"

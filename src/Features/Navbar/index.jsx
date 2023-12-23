@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import mlsaLogo from '../../assets/mlsa-logo.svg'
+import ExternalLink from '../../common/components/Link'
 
 export default function NavBar() {
 	const { isOpen, onToggle } = useDisclosure()
@@ -56,16 +57,19 @@ export default function NavBar() {
 						direction={'row'}
 						spacing={6}
 					>
-						<Button
-							fontSize={'sm'}
-							color={'white'}
-							bg={'brand.primary'}
-							borderRadius="8px"
-							fontWeight="500"
-							_hover={{ bg: 'brand.primary' }}
-						>
-							Become an Ambassador
-						</Button>
+						<ExternalLink href="https://mvp.microsoft.com/studentambassadors" target="_blank">
+							<Button
+								bg="white"
+								color="brand.primary"
+								border="1px solid #CEE6FF"
+								borderRadius="8px"
+								fontWeight="500"
+								minWidth="190px"
+								_hover={{ bg: 'none' }}
+							>
+								Become an Ambassador
+							</Button>
+						</ExternalLink>
 					</Stack>
 				</Flex>
 
@@ -79,16 +83,19 @@ export default function NavBar() {
 							))}
 						</Flex>
 						<Divider my="18px" />
-						<Button
-							fontSize={'sm'}
-							fontWeight={500}
-							color={'white'}
-							bg={'brand.primary'}
-							borderRadius="8px"
-							_hover={{ bg: 'brand.primary' }}
-						>
-							Become an Ambassador
-						</Button>
+						<ExternalLink href="https://mvp.microsoft.com/studentambassadors" target="_blank">
+							<Button
+								bg="white"
+								color="brand.primary"
+								border="1px solid #CEE6FF"
+								borderRadius="8px"
+								fontWeight="500"
+								minWidth="190px"
+								_hover={{ bg: 'none' }}
+							>
+								Become an Ambassador
+							</Button>
+						</ExternalLink>
 					</Box>
 				</Collapse>
 			</Container>
