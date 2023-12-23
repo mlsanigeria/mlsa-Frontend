@@ -71,6 +71,16 @@ export default function Impact() {
 				</Heading>
 				<Flex justify="center" gap="20px" my="43px" flexDir={{ base: 'column', sm: 'row' }}>
 					<Button
+						color={'white'}
+						bg={'brand.primary'}
+						borderRadius="8px"
+						fontWeight="500"
+						_hover={{ bg: 'brand.primary' }}
+						>
+						Join a Community
+					</Button>
+
+					<Button
 						bg="white"
 						color="brand.primary"
 						border="1px solid #CEE6FF"
@@ -78,16 +88,6 @@ export default function Impact() {
 						fontWeight="500"
 						minWidth="190px"
 						_hover={{ bg: 'none' }}
-					>
-						Join a Community
-					</Button>
-
-					<Button
-						color={'white'}
-						bg={'brand.primary'}
-						borderRadius="8px"
-						fontWeight="500"
-						_hover={{ bg: 'brand.primary' }}
 					>
 						Become an Ambassador
 					</Button>
