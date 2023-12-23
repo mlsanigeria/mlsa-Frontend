@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 
 const ExternalLink = ({ href, target, children }) => {
-  const handleClick = () => {
+  const handleClick = (event) => {
     if (target === '_blank') {
+      event.preventDefault(); // Prevent default behavior for '_blank'
       window.open(href, '_blank');
     } else {
       window.location.href = href;
