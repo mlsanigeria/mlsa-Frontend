@@ -13,8 +13,8 @@ export default function Home() {
 			<Container maxW="container.xl">
 				<Hero />
 				<Body />
-				<Resources />
 				<Impact />
+				<Resources />
 			</Container>
 			<Footer />
 		</>
